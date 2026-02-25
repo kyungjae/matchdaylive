@@ -10,7 +10,12 @@
 ## 실행
 정적 파일이라 `matchdaylive/src/index.html`을 브라우저에서 열면 됩니다.
 
-## 다음 단계 (v0.2.0 후보)
-- Section page (축구/농구) 분리
-- Match detail 템플릿 추가
+## 페이지
+- `src/index.html` : 홈
+- `src/football.html` : 축구 섹션
+- `src/match-detail.html` : 경기 상세
+
+## 다음 단계 (v0.3.0 후보)
+- 농구/야구 섹션 확장
+- Match detail 탭 인터랙션
 - 더미 데이터 → API 스키마 연결

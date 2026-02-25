@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.2.0 - 2026-02-26
+### Added
+- 축구 섹션 페이지 (`src/football.html`)
+- 경기 상세 템플릿 (`src/match-detail.html`)
+
+### Changed
+- 홈에서 섹션/상세 페이지 링크 연결 (`src/index.html`)
+- README에 페이지 구조 반영
+
+### Fixed
+- 없음
+
 ## v0.1.0 - 2026-02-26
 ### Added
 - Sports-first IA 기반 홈 프로토타입 (`src/index.html`)
