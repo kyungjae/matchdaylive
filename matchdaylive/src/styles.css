@@ -202,16 +202,56 @@ footer { text-align: center; color: var(--muted); padding: 24px 0 32px; }
 .ad-top { max-width: 1280px; margin: 10px auto 0; }
 .ad-inline { margin: 8px 0; }
 
+/* ESPN-like article detail */
+.article-espn { background:#e9eaec; }
+.article-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 14px 10px 20px;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 760px);
+  gap: 16px;
+  justify-content: center;
+}
+.story-list-panel {
+  background:#f3f4f6;
+  border:1px solid #d8dbe0;
+}
+.story-list-panel ul { list-style:none; margin:0; padding:0; }
+.story-list-panel li { border-bottom:1px solid #e1e4e8; }
+.story-list-panel a {
+  display:block; padding:10px 12px;
+  text-decoration:none; color:#111827;
+  font-size:15px; line-height:1.35;
+}
+.story-list-panel a:hover { background:#eceff3; }
+.article-paper {
+  background:#fff;
+  border:1px solid #d9dde3;
+  padding:30px 34px;
+  color:#24292f;
+  line-height:1.9;
+}
+.article-head h1 { font-size:54px; line-height:1.05; margin:0 0 14px; letter-spacing:-0.02em; }
+.byline-row { display:flex; gap:10px; align-items:center; margin-bottom:10px; }
+.author-avatar { width:36px; height:36px; border-radius:50%; object-fit:cover; }
+.author-name { font-weight:700; }
+.article-actions { border-top:1px solid #eceef1; border-bottom:1px solid #eceef1; padding:8px 0; margin:8px 0 14px; color:#4b5563; font-size:14px; }
+.article-paper p { font-family: Georgia, 'Times New Roman', serif; font-size:20px; line-height:1.75; margin:0 0 16px; }
+.article-hero-image { width:100%; border-radius:2px; margin-top:14px; }
+
 @media (max-width: 900px) {
   .main-grid { grid-template-columns: 1fr; }
   .league-blocks { grid-template-columns: 1fr; }
   .article-layout,
-  .article-layout-3col { grid-template-columns: 1fr; }
-  .article-sidebar { position: static; max-height: none; }
+  .article-layout-3col,
+  .article-shell { grid-template-columns: 1fr; }
+  .article-sidebar, .story-list-panel { position: static; max-height: none; }
   .article-right-rail { position: static; }
-  .article-main { padding: 18px; }
-  .article-main h1 { font-size: 1.65rem; }
+  .article-main, .article-paper { padding: 18px; }
+  .article-main h1, .article-head h1 { font-size: 34px; }
   .article-main p { font-size: 16px; }
+  .article-paper p { font-size: 24px; }
   .feature-story h2 { font-size: 26px; }
   .espn-layout { grid-template-columns: 1fr; }
 }
