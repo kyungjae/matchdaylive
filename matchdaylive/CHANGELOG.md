@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.8.0 - 2026-02-26
+### Added
+- 메인 홈 광고 슬롯 구조(Top/Right/In-feed)
+- SEO 메타 + OpenGraph/Twitter + JSON-LD 적용
+
+### Changed
+- ESPN 메인 홈을 트래픽/수익화 준비형 구조로 확장
+
+### Fixed
+- 없음
+
 ## v0.7.1 - 2026-02-26
 ### Changed
 - ESPN 스타일 페이지를 메인(`src/index.html`)으로 승격

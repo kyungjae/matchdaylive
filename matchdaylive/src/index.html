@@ -3,8 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MatchDay Live · ESPN Style</title>
+  <title>MatchDay Live | Live Scores, Sports Headlines, Highlights</title>
+  <meta name="description" content="MatchDay Live: 실시간 스코어, 종목별 헤드라인, 하이라이트를 한 번에 보는 스포츠 홈." />
+  <link rel="canonical" href="https://matchdaylive.co/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MatchDay Live | Live Scores, Sports Headlines, Highlights" />
+  <meta property="og:description" content="실시간 스코어와 스포츠 주요 뉴스를 ESPN형 레이아웃으로 제공." />
+  <meta property="og:url" content="https://matchdaylive.co/" />
+  <meta property="og:site_name" content="MatchDay Live" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MatchDay Live" />
+  <meta name="twitter:description" content="Live scores, sports headlines, and highlights." />
   <link rel="stylesheet" href="./styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"NewsMediaOrganization",
+        "name":"MatchDay Live",
+        "url":"https://matchdaylive.co",
+        "logo":"https://matchdaylive.co/favicon.ico"
+      },
+      {
+        "@type":"WebSite",
+        "name":"MatchDay Live",
+        "url":"https://matchdaylive.co",
+        "potentialAction": {
+          "@type":"SearchAction",
+          "target":"https://matchdaylive.co/?q={search_term_string}",
+          "query-input":"required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="espn-body">
   <header class="score-ticker">
@@ -16,8 +49,11 @@
     <a href="#">NFL</a><a href="#">NBA</a><a href="#">NCAAM</a><a href="#">MLB</a><a href="#">Soccer</a><a href="#">More</a>
   </nav>
 
+  <section class="ad-slot ad-top" data-slot="top-banner">AD SLOT · TOP LEADERBOARD 970x90</section>
+
   <main class="espn-layout">
     <aside class="left-rail card">
+      <section class="ad-slot" data-slot="left-rail-top">AD SLOT · LEFT RAIL 300x250</section>
       <h3>Watch on MatchDay</h3>
       <button class="cta">Subscribe</button>
       <ul>
@@ -49,6 +85,8 @@
         </div>
       </section>
 
+      <section class="ad-slot ad-inline" data-slot="center-inline">AD SLOT · INFEED LEADERBOARD 970x90</section>
+
       <article class="feature-story card">
         <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop" alt="feature" />
         <h2>The secret Kobe Bryant-Michael Jordan connection few knew about</h2>
@@ -65,6 +103,7 @@
     </section>
 
     <aside class="right-rail">
+      <section class="ad-slot" data-slot="right-rail-top">AD SLOT · RIGHT RAIL 300x600</section>
       <section class="card">
         <h3>Top Headlines</h3>
         <ul>

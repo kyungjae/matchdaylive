@@ -172,6 +172,17 @@ footer { text-align: center; color: var(--muted); padding: 24px 0 32px; }
 .feature-story img { width: 100%; border-radius: 8px; height: 260px; object-fit: cover; }
 .feature-story h2 { margin: 8px 0 0; color: #111; }
 .video-card img { width: 100%; border-radius: 8px; }
+.ad-slot {
+  background: repeating-linear-gradient(45deg,#f7f7f7,#f7f7f7 10px,#efefef 10px,#efefef 20px);
+  border: 1px dashed #bcbcbc;
+  border-radius: 10px;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+  padding: 18px 10px;
+}
+.ad-top { max-width: 1280px; margin: 10px auto 0; }
+.ad-inline { margin: 8px 0; }
 
 @media (max-width: 900px) {
   .main-grid { grid-template-columns: 1fr; }
