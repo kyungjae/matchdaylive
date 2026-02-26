@@ -13,6 +13,8 @@
 ## 페이지
 - `src/index.html` : 홈
 - `src/football.html` : 축구 섹션
+- `src/basketball.html` : 농구 섹션
+- `src/baseball.html` : 야구 섹션
 - `src/match-detail.html` : 경기 상세
 
 ## 다음 단계 (v0.3.0 후보)
