@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.7.1 - 2026-02-26
+### Changed
+- ESPN 스타일 페이지를 메인(`src/index.html`)으로 승격
+- 메인 스크립트도 ESPN ticker 구조로 정렬(`src/main.js`)
+
+### Fixed
+- 없음
+
+## v0.7.0 - 2026-02-26
+### Added
+- ESPN형 3단 레이아웃 홈 (`src/espn-style.html`)
+- 상단 스코어 ticker 스크립트 (`src/espn-style.js`)
+
+## v0.6.0 - 2026-02-26
+### Added
+- GitHub Pages 자동배포 워크플로우
+- 커스텀 도메인 CNAME 설정
+
 ## v0.5.0 - 2026-02-26
 ### Added
 - 아티클 내 링크 임베드 툴 (YouTube / X / 이미지 / mp4)

@@ -3,103 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MatchDay Live</title>
+  <title>MatchDay Live · ESPN Style</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
-<body>
-  <header class="top-utility">
-    <div class="logo">MATCHDAY LIVE</div>
-    <div class="utility-actions">
-      <input type="search" placeholder="팀/리그 검색" />
-      <button>로그인</button>
-    </div>
+<body class="espn-body">
+  <header class="score-ticker">
+    <div class="ticker-track" id="tickerTrack"></div>
   </header>
 
-  <nav class="primary-nav">
-    <a href="#">Top</a>
-    <a href="#">Live</a>
-    <a href="#">Scores</a>
-    <a href="#">Fixtures</a>
-    <a href="#">Highlights</a>
-    <a href="#">Leagues</a>
+  <nav class="espn-nav">
+    <div class="logo">MATCHDAYLIVE</div>
+    <a href="#">NFL</a><a href="#">NBA</a><a href="#">NCAAM</a><a href="#">MLB</a><a href="#">Soccer</a><a href="#">More</a>
   </nav>
 
-  <nav class="sports-tabs">
-    <a class="tab-link active" href="./football.html">축구</a>
-    <a class="tab-link" href="./basketball.html">농구</a>
-    <a class="tab-link" href="./baseball.html">야구</a>
-    <a class="tab-link" href="#">e스포츠</a>
-  </nav>
+  <main class="espn-layout">
+    <aside class="left-rail card">
+      <h3>Watch on MatchDay</h3>
+      <button class="cta">Subscribe</button>
+      <ul>
+        <li>Live: Thunder vs Pistons</li>
+        <li>Live: Celtics vs Nuggets</li>
+        <li>Live: NCAA Men’s Basketball</li>
+        <li>Live: NHL Power Play</li>
+      </ul>
+      <h4>Quick Links</h4>
+      <ul>
+        <li>Men’s Hoops Schedule</li>
+        <li>Women’s Hoops Schedule</li>
+        <li>Bracketology</li>
+      </ul>
+    </aside>
 
-  <main>
-    <section class="live-strip">
-      <h2>LIVE NOW</h2>
-      <div class="live-cards" id="liveCards"></div>
-    </section>
-
-    <section class="main-grid">
-      <section class="content-left">
-        <article class="lead-story">
-          <span class="tag">TOP STORY</span>
-          <h1><a href="./article.html" style="color:inherit;text-decoration:none;">손흥민, 결승골로 토트넘 역전승</a></h1>
-          <p>후반 88분 극적 결승골. 팀은 3연승으로 상위권 추격.</p>
-        </article>
-
-        <section class="headlines">
-          <h3>Top Headlines</h3>
-          <ul>
-            <li>NBA: 요키치 트리플더블, 덴버 4연승</li>
-            <li>KBO 시범경기 개막, 신인 투수 돌풍</li>
-            <li>챔스 16강 대진 확정, 빅매치 성사</li>
-            <li>e스포츠 LCK, 신인 미드 라이너 데뷔전 MVP</li>
-          </ul>
-        </section>
+    <section class="center-column">
+      <section class="card hero-score">
+        <div class="match">Thunder <b>52</b> <span>vs</span> <b>56</b> Pistons</div>
+        <div class="actions"><button>Watch</button><button>Gamecast</button><button>Box Score</button></div>
       </section>
 
-      <aside class="content-right">
-        <section class="score-board">
-          <h3>Today’s Scores</h3>
-          <ul>
-            <li><b>서울</b> 2 - 1 <b>울산</b> <span class="badge ft">FT</span></li>
-            <li><b>LG</b> 98 - 101 <b>KCC</b> <span class="badge live">LIVE</span></li>
-            <li><b>두산</b> 4 - 2 <b>SSG</b> <span class="badge ht">5회</span></li>
-          </ul>
-        </section>
+      <section class="card scoreboard">
+        <h3>MEN'S COLLEGE HOOPS SCOREBOARD</h3>
+        <div class="rows">
+          <div class="row"><span>Georgia 64</span><span>Florida 58</span><button>Watch</button></div>
+          <div class="row"><span>St John's 31</span><span>UConn 61</span><button>Watch</button></div>
+          <div class="row"><span>Tulsa 48</span><span>Tulane 29</span><button>Watch</button></div>
+        </div>
+      </section>
 
-        <section class="fixtures">
-          <h3>Upcoming Fixtures</h3>
-          <ul>
-            <li>19:30  전북 vs 포항</li>
-            <li>20:00  맨시티 vs 아스널</li>
-            <li>21:00  T1 vs GEN</li>
-          </ul>
-        </section>
-      </aside>
+      <article class="feature-story card">
+        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1200&auto=format&fit=crop" alt="feature" />
+        <h2>The secret Kobe Bryant-Michael Jordan connection few knew about</h2>
+      </article>
+
+      <section class="card scoreboard">
+        <h3>WOMEN'S COLLEGE HOOPS SCOREBOARD</h3>
+        <div class="rows">
+          <div class="row"><span>West Virginia 62</span><span>UCF 51</span><button>Watch</button></div>
+          <div class="row"><span>Texas Tech 36</span><span>Kansas 31</span><button>Watch</button></div>
+          <div class="row"><span>Ohio State 32</span><span>TCU 70</span><button>Watch</button></div>
+        </div>
+      </section>
     </section>
 
-    <section class="league-blocks">
-      <article>
-        <h3>Premier League</h3>
-        <p>순위, 일정, 핵심뉴스 한 번에 보기</p>
-        <a href="./football.html" style="color:#7fdcff;">축구 섹션 열기 →</a>
-      </article>
-      <article>
-        <h3>NBA</h3>
-        <p>오늘의 경기 결과 + 파워랭킹</p>
-      </article>
-      <article>
-        <h3>KBO</h3>
-        <p>팀별 선발/불펜 컨디션 리포트</p>
-        <a href="./match-detail.html" style="color:#7fdcff;">경기 상세 예시 보기 →</a>
-      </article>
-    </section>
+    <aside class="right-rail">
+      <section class="card">
+        <h3>Top Headlines</h3>
+        <ul>
+          <li>Hilary Knight: Women's team joke 'distasteful'</li>
+          <li>Cincy sues transfer QB over $1M exit fee</li>
+          <li>Suns' Ishbia offers $1M to All-Star winners</li>
+          <li>MVP odds tighten as SGA, Jokic near ineligibility</li>
+        </ul>
+      </section>
+      <section class="card video-card">
+        <h3>ICYMI</h3>
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=800&auto=format&fit=crop" alt="icymi" />
+      </section>
+    </aside>
   </main>
 
-  <footer>
-    <small>MatchDay Live v0.1.0 · Sports-first IA prototype</small><br />
-    <a href="./espn-style.html" style="color:#7fdcff;">ESPN 스타일 홈 보기 →</a>
-  </footer>
-
-  <script src="./main.js"></script>
+  <script src="./espn-style.js"></script>
 </body>
 </html>
