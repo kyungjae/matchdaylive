@@ -55,3 +55,62 @@ const io = new IntersectionObserver((entries) => {
 }, { rootMargin: '200px' });
 
 io.observe(sentinel);
+
+// Embed tool (YouTube / X / direct media)
+const input = document.getElementById('linkInput');
+const renderBtn = document.getElementById('renderEmbeds');
+const output = document.getElementById('embedOutput');
+
+function extractYouTubeId(url) {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes('youtu.be')) return u.pathname.slice(1);
+    if (u.pathname.startsWith('/shorts/')) return u.pathname.split('/')[2];
+    return u.searchParams.get('v');
+  } catch {
+    return null;
+  }
+}
+
+function isXUrl(url) {
+  return /https?:\/\/(x\.com|twitter\.com)\/.+\/status\/\d+/i.test(url);
+}
+
+function ensureXScript() {
+  if (document.querySelector('script[src="https://platform.twitter.com/widgets.js"]')) return;
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://platform.twitter.com/widgets.js';
+  document.body.appendChild(s);
+}
+
+function renderOne(url) {
+  const clean = url.trim();
+  if (!clean) return '';
+
+  const ytId = extractYouTubeId(clean);
+  if (ytId) {
+    return `<div class="embed-card"><iframe src="https://www.youtube.com/embed/${ytId}" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
+  }
+
+  if (isXUrl(clean)) {
+    ensureXScript();
+    return `<div class="embed-card"><blockquote class="twitter-tweet"><a href="${clean}">${clean}</a></blockquote></div>`;
+  }
+
+  if (/\.(png|jpe?g|gif|webp|avif)(\?.*)?$/i.test(clean)) {
+    return `<div class="embed-card"><img src="${clean}" alt="embedded image" loading="lazy" /></div>`;
+  }
+
+  if (/\.(mp4|webm|ogg)(\?.*)?$/i.test(clean)) {
+    return `<div class="embed-card"><video controls playsinline src="${clean}"></video></div>`;
+  }
+
+  return `<div class="embed-card"><a href="${clean}" target="_blank" rel="noopener">${clean}</a></div>`;
+}
+
+renderBtn?.addEventListener('click', () => {
+  const urls = input.value.split(/\n+/).map((v) => v.trim()).filter(Boolean);
+  output.innerHTML = urls.map(renderOne).join('');
+  if (window.twttr?.widgets?.load) window.twttr.widgets.load();
+});

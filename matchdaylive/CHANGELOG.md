@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.5.0 - 2026-02-26
+### Added
+- 아티클 내 링크 임베드 툴 (YouTube / X / 이미지 / mp4)
+
+### Changed
+- 아티클 페이지에 임베드 입력 UI 및 출력 영역 추가
+- 임베드 스타일 컴포넌트 추가
+
+### Fixed
+- 없음
+
 ## v0.4.0 - 2026-02-26
 ### Added
 - ESPN 스타일 아티클 페이지 (`src/article.html`)

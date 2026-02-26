@@ -110,6 +110,48 @@ footer { text-align: center; color: var(--muted); padding: 24px 0 32px; }
 }
 .feed-sentinel { text-align: center; color: #9cb2df; padding: 12px 0; }
 
+.embed-tool {
+  border: 1px solid #274177;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px 0 18px;
+  background: #111a35;
+}
+.embed-tool textarea {
+  width: 100%;
+  background: #0b132a;
+  color: #dbe8ff;
+  border: 1px solid #2b4277;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+.embed-tool button {
+  background: #1e4bd8;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.embed-output { margin-top: 10px; display: grid; gap: 10px; }
+.embed-card {
+  border: 1px solid #2c457d;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0f1730;
+  padding: 8px;
+}
+.embed-card iframe,
+.embed-card video,
+.embed-card img {
+  width: 100%;
+  min-height: 260px;
+  border: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 @media (max-width: 900px) {
   .main-grid { grid-template-columns: 1fr; }
   .league-blocks { grid-template-columns: 1fr; }
