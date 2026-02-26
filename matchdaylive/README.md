@@ -17,6 +17,7 @@
 - `src/baseball.html` : 야구 섹션
 - `src/match-detail.html` : 경기 상세
 - `src/article.html` : 아티클(좌측 sticky 추천 목록 + 하단 연속 피드 + YouTube/X 임베드)
+- `src/espn-style.html` : ESPN형 3단 레이아웃 홈
 
 ## 다음 단계 (v0.3.0 후보)
 - 농구/야구 섹션 확장

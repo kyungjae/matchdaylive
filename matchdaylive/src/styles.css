@@ -152,9 +152,31 @@ footer { text-align: center; color: var(--muted); padding: 24px 0 32px; }
   object-fit: cover;
 }
 
+/* ESPN-like homepage */
+.espn-body { background: #f2f3f5; color: #111; }
+.score-ticker { position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 1px solid #ddd; overflow-x: auto; }
+.ticker-track { display: flex; gap: 8px; padding: 8px 12px; min-width: max-content; }
+.ticker-item { background: #f8f8f8; border: 1px solid #ddd; border-radius: 8px; padding: 6px 10px; font-size: 12px; white-space: nowrap; }
+.espn-nav { display: flex; align-items: center; gap: 14px; background: #111; color: #fff; padding: 10px 14px; }
+.espn-nav .logo { background: #c90000; padding: 4px 8px; border-radius: 4px; font-weight: 800; }
+.espn-nav a { color: #fff; text-decoration: none; font-size: 14px; }
+.espn-layout { max-width: 1280px; margin: 12px auto; padding: 0 10px; display: grid; grid-template-columns: 240px 1fr 280px; gap: 12px; }
+.card { background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 10px; }
+.left-rail ul, .right-rail ul { margin: 8px 0 0; padding-left: 18px; line-height: 1.6; color: #333; }
+.cta { width: 100%; padding: 10px; background: #1967ff; color: #fff; border: none; border-radius: 20px; margin-bottom: 8px; }
+.hero-score .match { font-size: 30px; text-align: center; margin: 10px 0; }
+.hero-score .actions { display: flex; justify-content: center; gap: 8px; }
+.hero-score button, .scoreboard button { border: 1px solid #2b66d8; background: #fff; color: #2b66d8; border-radius: 20px; padding: 6px 12px; }
+.scoreboard .rows { display: grid; gap: 8px; }
+.scoreboard .row { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; align-items: center; border-top: 1px solid #eee; padding-top: 8px; }
+.feature-story img { width: 100%; border-radius: 8px; height: 260px; object-fit: cover; }
+.feature-story h2 { margin: 8px 0 0; color: #111; }
+.video-card img { width: 100%; border-radius: 8px; }
+
 @media (max-width: 900px) {
   .main-grid { grid-template-columns: 1fr; }
   .league-blocks { grid-template-columns: 1fr; }
   .article-layout { grid-template-columns: 1fr; }
   .article-sidebar { position: static; max-height: none; }
+  .espn-layout { grid-template-columns: 1fr; }
 }
