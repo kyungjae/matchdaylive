@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.4.0 - 2026-02-26
+### Added
+- ESPN 스타일 아티클 페이지 (`src/article.html`)
+- 아티클 연속 피드 스크롤 로직 (`src/article.js`)
+
+### Changed
+- 홈 리드스토리에서 아티클 진입 링크 연결 (`src/index.html`)
+- 아티클 전용 레이아웃/사이드바/피드 스타일 추가 (`src/styles.css`)
+
+### Fixed
+- 없음
+
 ## v0.3.0 - 2026-02-26
 ### Added
 - 농구 섹션 페이지 (`src/basketball.html`)

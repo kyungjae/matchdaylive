@@ -63,7 +63,56 @@ main { padding: 20px; max-width: 1200px; margin: 0 auto; }
 .league-blocks article { padding: 14px; }
 footer { text-align: center; color: var(--muted); padding: 24px 0 32px; }
 
+/* Article layout (ESPN-like) */
+.article-layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.article-sidebar {
+  position: sticky;
+  top: 64px;
+  background: var(--card);
+  border: 1px solid #263d74;
+  border-radius: 12px;
+  padding: 12px;
+  max-height: calc(100vh - 90px);
+  overflow: auto;
+}
+.article-sidebar ul { list-style: none; padding: 0; margin: 0; }
+.article-sidebar li { border-bottom: 1px solid #22345f; }
+.article-sidebar a {
+  display: block;
+  text-decoration: none;
+  color: #c7d8ff;
+  padding: 10px 4px;
+  line-height: 1.4;
+}
+.article-sidebar a:hover { color: #fff; }
+.article-main {
+  background: var(--card);
+  border: 1px solid #263d74;
+  border-radius: 12px;
+  padding: 22px;
+  line-height: 1.9;
+  color: #d6e3ff;
+}
+.article-main h1 { margin: 8px 0; font-size: 2rem; line-height: 1.2; }
+.article-meta { color: #9eb1db; margin-bottom: 16px; }
+.next-feed { margin-top: 28px; border-top: 1px solid #25396a; padding-top: 14px; }
+.next-card {
+  border: 1px solid #274177;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: var(--card-2);
+}
+.feed-sentinel { text-align: center; color: #9cb2df; padding: 12px 0; }
+
 @media (max-width: 900px) {
   .main-grid { grid-template-columns: 1fr; }
   .league-blocks { grid-template-columns: 1fr; }
+  .article-layout { grid-template-columns: 1fr; }
+  .article-sidebar { position: static; max-height: none; }
 }
