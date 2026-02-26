@@ -19,12 +19,12 @@
 - `src/article.html` : 아티클(좌측 sticky 추천 목록 + 하단 연속 피드 + YouTube/X 임베드)
 - `src/espn-style.html` : ESPN형 3단 레이아웃 홈
 
-## 현재 상태 (v0.8.0)
-- ESPN형 메인 홈 활성화
-- SEO 기본 메타 + JSON-LD 적용
-- 광고 슬롯 구조(Top / Right rail / In-feed) 배치 완료
+## 현재 상태 (v0.9.0)
+- ESPN형 메인 홈 + 디테일 모듈 강화
+- 상세 페이지 3열(좌/중/우 rail) 읽기 경험 적용
+- SEO 기본 메타 + 광고 슬롯 구조(Top / Right / In-feed / Article rail) 적용
 
-## 다음 단계 (v0.9.0 후보)
+## 다음 단계 (v1.0.0 후보)
 - 광고 스크립트(AdSense 등) 실제 연결
 - 종목별 페이지를 동일 광고/SEO 구조로 통일
 - 더미 데이터 → API 스키마 연결
